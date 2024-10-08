@@ -8,5 +8,5 @@ var reduce = function(key, values) {
 
 var count = db.velib.mapReduce(map, reduce, { out: "arrondissement_count" });
 
-// Afficher les résultats
-db.arrondissement_count.find();
+// Afficher les résultats dans l'ordre décroissant
+db.arrondissement_count.find().sort({ value: -1 });
