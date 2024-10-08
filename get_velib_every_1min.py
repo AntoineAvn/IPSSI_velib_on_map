@@ -142,4 +142,4 @@ data_thread.start()
 create_and_save_map()
 
 # Open the map in the default web browser
-# webbrowser.open('velib_map.html')
+webbrowser.open('velib_map.html')
