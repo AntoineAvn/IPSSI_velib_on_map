@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dcfdebe0e441d6d871777c913612303a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dcfdebe0e441d6d871777c913612303a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dcfdebe0e441d6d871777c913612303a = L.map(
+                "map_dcfdebe0e441d6d871777c913612303a",
+                {
+                    center: [48.8575811, 2.294866],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_daa2ca159abc6579581509fe18343831 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var marker_3c6c9db64f457aed133cf4d3473cd376 = L.marker(
+                [48.8575811, 2.294866],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_f89d358937c4dcad951e2598b2f68045 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-pin", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3c6c9db64f457aed133cf4d3473cd376.setIcon(icon_f89d358937c4dcad951e2598b2f68045);
+        
+    
+        var popup_fad452b9fd5b36d95784532afa597d84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_729cce43382db44523188b25b7c4a400 = $(`<div id="html_729cce43382db44523188b25b7c4a400" style="width: 100.0%; height: 100.0%;">Vous êtes ici</div>`)[0];
+                popup_fad452b9fd5b36d95784532afa597d84.setContent(html_729cce43382db44523188b25b7c4a400);
+            
+        
+
+        marker_3c6c9db64f457aed133cf4d3473cd376.bindPopup(popup_fad452b9fd5b36d95784532afa597d84)
+        ;
+
+        
+    
+    
+            var marker_9539eac7b34734556e95661aca12a1e5 = L.marker(
+                [48.852804604940296, 2.293077029857222],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_542c26e4738d9fc4fa453452d882c14e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9539eac7b34734556e95661aca12a1e5.setIcon(icon_542c26e4738d9fc4fa453452d882c14e);
+        
+    
+        var popup_ebfdc44a2f05d757ed6d1e0f31234899 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03a2771b09cb806e069464ac513163db = $(`<div id="html_03a2771b09cb806e069464ac513163db" style="width: 100.0%; height: 100.0%;">         <b>Station:</b> Desaix - Edgar Faure<br>         <b>Arrondissement:</b> Paris<br>         <b>Capacité totale:</b> 12<br>         <b>Vélos disponibles:</b> 5 (Mécaniques: 1, Électriques: 4)<br>         <b>Places libres:</b> 6<br>         <b>En location:</b> OUI<br>         <b>Distance:</b> 0.55 km         </div>`)[0];
+                popup_ebfdc44a2f05d757ed6d1e0f31234899.setContent(html_03a2771b09cb806e069464ac513163db);
+            
+        
+
+        marker_9539eac7b34734556e95661aca12a1e5.bindPopup(popup_ebfdc44a2f05d757ed6d1e0f31234899)
+        ;
+
+        
+    
+    
+            var marker_1e9558b6749b0607304b5ddadf01f51e = L.marker(
+                [48.863875, 2.28189],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_493f45529610ae536c887bd8f6d5a94d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1e9558b6749b0607304b5ddadf01f51e.setIcon(icon_493f45529610ae536c887bd8f6d5a94d);
+        
+    
+        var popup_b9607840ee3e0e101f122f894febaa7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce2ce0bf09cbcd69f9dc157e716955bd = $(`<div id="html_ce2ce0bf09cbcd69f9dc157e716955bd" style="width: 100.0%; height: 100.0%;">         <b>Station:</b> Sablons - Georges Mandel<br>         <b>Arrondissement:</b> Paris<br>         <b>Capacité totale:</b> 38<br>         <b>Vélos disponibles:</b> 3 (Mécaniques: 1, Électriques: 2)<br>         <b>Places libres:</b> 35<br>         <b>En location:</b> OUI<br>         <b>Distance:</b> 1.18 km         </div>`)[0];
+                popup_b9607840ee3e0e101f122f894febaa7e.setContent(html_ce2ce0bf09cbcd69f9dc157e716955bd);
+            
+        
+
+        marker_1e9558b6749b0607304b5ddadf01f51e.bindPopup(popup_b9607840ee3e0e101f122f894febaa7e)
+        ;
+
+        
+    
+    
+            var marker_c6f4a93de46e7415ab0557573a8d4bd4 = L.marker(
+                [48.844835471244416, 2.297508493065834],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_0ef14237ef813444408a64acadb471fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c6f4a93de46e7415ab0557573a8d4bd4.setIcon(icon_0ef14237ef813444408a64acadb471fe);
+        
+    
+        var popup_fde1bf31b46a92a7eb4daaf3c44152af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83bf4cc94b96e395db6ca1bc69ad6792 = $(`<div id="html_83bf4cc94b96e395db6ca1bc69ad6792" style="width: 100.0%; height: 100.0%;">         <b>Station:</b> Joseph Liouville - Croix Nivert<br>         <b>Arrondissement:</b> Paris<br>         <b>Capacité totale:</b> 64<br>         <b>Vélos disponibles:</b> 12 (Mécaniques: 7, Électriques: 5)<br>         <b>Places libres:</b> 51<br>         <b>En location:</b> OUI<br>         <b>Distance:</b> 1.43 km         </div>`)[0];
+                popup_fde1bf31b46a92a7eb4daaf3c44152af.setContent(html_83bf4cc94b96e395db6ca1bc69ad6792);
+            
+        
+
+        marker_c6f4a93de46e7415ab0557573a8d4bd4.bindPopup(popup_fde1bf31b46a92a7eb4daaf3c44152af)
+        ;
+
+        
+    
+    
+            var marker_858f1b19889fde4775ffe9ca73b99da8 = L.marker(
+                [48.84442462786544, 2.294059172272682],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_27001ee181d26c0185448f6d3f56c82f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_858f1b19889fde4775ffe9ca73b99da8.setIcon(icon_27001ee181d26c0185448f6d3f56c82f);
+        
+    
+        var popup_df68393dad0ec092ea6ae8f8f5d41d08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf7948830ea66e18f3fec4d1c38f06b9 = $(`<div id="html_bf7948830ea66e18f3fec4d1c38f06b9" style="width: 100.0%; height: 100.0%;">         <b>Station:</b> Lakanal - Commerce<br>         <b>Arrondissement:</b> Paris<br>         <b>Capacité totale:</b> 53<br>         <b>Vélos disponibles:</b> 6 (Mécaniques: 5, Électriques: 1)<br>         <b>Places libres:</b> 45<br>         <b>En location:</b> OUI<br>         <b>Distance:</b> 1.46 km         </div>`)[0];
+                popup_df68393dad0ec092ea6ae8f8f5d41d08.setContent(html_bf7948830ea66e18f3fec4d1c38f06b9);
+            
+        
+
+        marker_858f1b19889fde4775ffe9ca73b99da8.bindPopup(popup_df68393dad0ec092ea6ae8f8f5d41d08)
+        ;
+
+        
+    
+    
+            var marker_7a41a7cc4c1ecdaea65754413c3d06c2 = L.marker(
+                [48.865983, 2.275725],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_3e6da2916c3339ad8ecd501f0712ff5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7a41a7cc4c1ecdaea65754413c3d06c2.setIcon(icon_3e6da2916c3339ad8ecd501f0712ff5a);
+        
+    
+        var popup_634d337d6a2ac607113e52309b393ed8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0ece6e76f2fb06ac95410e378561225 = $(`<div id="html_f0ece6e76f2fb06ac95410e378561225" style="width: 100.0%; height: 100.0%;">         <b>Station:</b> Benjamin Godard - Victor Hugo<br>         <b>Arrondissement:</b> Paris<br>         <b>Capacité totale:</b> 35<br>         <b>Vélos disponibles:</b> 20 (Mécaniques: 4, Électriques: 16)<br>         <b>Places libres:</b> 14<br>         <b>En location:</b> OUI<br>         <b>Distance:</b> 1.69 km         </div>`)[0];
+                popup_634d337d6a2ac607113e52309b393ed8.setContent(html_f0ece6e76f2fb06ac95410e378561225);
+            
+        
+
+        marker_7a41a7cc4c1ecdaea65754413c3d06c2.bindPopup(popup_634d337d6a2ac607113e52309b393ed8)
+        ;
+
+        
+    
+    
+            var marker_fa268acb5b948dfe990205e6026716b2 = L.marker(
+                [48.85034821320644, 2.273029983043671],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_8413f5acb519c5b6d9126ec42ee3a440 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fa268acb5b948dfe990205e6026716b2.setIcon(icon_8413f5acb519c5b6d9126ec42ee3a440);
+        
+    
+        var popup_21ee9cfc80d6fbd0f30c65a019c3b307 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_076802f65e2d46f1e010bda492f52172 = $(`<div id="html_076802f65e2d46f1e010bda492f52172" style="width: 100.0%; height: 100.0%;">         <b>Station:</b> Théophile Gautier - François Millet<br>         <b>Arrondissement:</b> Paris<br>         <b>Capacité totale:</b> 30<br>         <b>Vélos disponibles:</b> 11 (Mécaniques: 9, Électriques: 2)<br>         <b>Places libres:</b> 19<br>         <b>En location:</b> OUI<br>         <b>Distance:</b> 1.79 km         </div>`)[0];
+                popup_21ee9cfc80d6fbd0f30c65a019c3b307.setContent(html_076802f65e2d46f1e010bda492f52172);
+            
+        
+
+        marker_fa268acb5b948dfe990205e6026716b2.bindPopup(popup_21ee9cfc80d6fbd0f30c65a019c3b307)
+        ;
+
+        
+    
+    
+            var marker_925751d12a2ebe320288c98060cfb8cd = L.marker(
+                [48.84240765130395, 2.281037718057633],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_8a2f71b41ad9d7868c04fd86080e61f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_925751d12a2ebe320288c98060cfb8cd.setIcon(icon_8a2f71b41ad9d7868c04fd86080e61f7);
+        
+    
+        var popup_b65fff420f494eb869201462d26fcc9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9f9e159719fabfd5882da753c7cfacd = $(`<div id="html_f9f9e159719fabfd5882da753c7cfacd" style="width: 100.0%; height: 100.0%;">         <b>Station:</b> Cevennes - Bergers<br>         <b>Arrondissement:</b> Paris<br>         <b>Capacité totale:</b> 29<br>         <b>Vélos disponibles:</b> 28 (Mécaniques: 23, Électriques: 5)<br>         <b>Places libres:</b> 1<br>         <b>En location:</b> OUI<br>         <b>Distance:</b> 1.97 km         </div>`)[0];
+                popup_b65fff420f494eb869201462d26fcc9c.setContent(html_f9f9e159719fabfd5882da753c7cfacd);
+            
+        
+
+        marker_925751d12a2ebe320288c98060cfb8cd.bindPopup(popup_b65fff420f494eb869201462d26fcc9c)
+        ;
+
+        
+    
+    
+            var marker_6ba5fcff85ab3342b40677a14454209d = L.marker(
+                [48.87393521240818, 2.3064258322119713],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_987ee5afba8a6669ee7e7a15d3302898 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6ba5fcff85ab3342b40677a14454209d.setIcon(icon_987ee5afba8a6669ee7e7a15d3302898);
+        
+    
+        var popup_cf89ff4fd8ff4548dfe47751af0b5891 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8516436c7468f80bfde0fd7495c228b6 = $(`<div id="html_8516436c7468f80bfde0fd7495c228b6" style="width: 100.0%; height: 100.0%;">         <b>Station:</b> Artois - Berri<br>         <b>Arrondissement:</b> Paris<br>         <b>Capacité totale:</b> 23<br>         <b>Vélos disponibles:</b> 19 (Mécaniques: 14, Électriques: 5)<br>         <b>Places libres:</b> 4<br>         <b>En location:</b> OUI<br>         <b>Distance:</b> 2.01 km         </div>`)[0];
+                popup_cf89ff4fd8ff4548dfe47751af0b5891.setContent(html_8516436c7468f80bfde0fd7495c228b6);
+            
+        
+
+        marker_6ba5fcff85ab3342b40677a14454209d.bindPopup(popup_cf89ff4fd8ff4548dfe47751af0b5891)
+        ;
+
+        
+    
+    
+            var marker_ddb1e27175f88ed426e35e45512636ea = L.marker(
+                [48.83796366147599, 2.2877392172813416],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_a0ca059b0b23b96f4a9a04399eb66202 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ddb1e27175f88ed426e35e45512636ea.setIcon(icon_a0ca059b0b23b96f4a9a04399eb66202);
+        
+    
+        var popup_20e62990fb7e37e54e4f3190cacbb9ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2138819bc37cab827971264bacd6599d = $(`<div id="html_2138819bc37cab827971264bacd6599d" style="width: 100.0%; height: 100.0%;">         <b>Station:</b> Lecourbe - Jean Maridor<br>         <b>Arrondissement:</b> Paris<br>         <b>Capacité totale:</b> 19<br>         <b>Vélos disponibles:</b> 6 (Mécaniques: 4, Électriques: 2)<br>         <b>Places libres:</b> 11<br>         <b>En location:</b> OUI<br>         <b>Distance:</b> 2.24 km         </div>`)[0];
+                popup_20e62990fb7e37e54e4f3190cacbb9ad.setContent(html_2138819bc37cab827971264bacd6599d);
+            
+        
+
+        marker_ddb1e27175f88ed426e35e45512636ea.bindPopup(popup_20e62990fb7e37e54e4f3190cacbb9ad)
+        ;
+
+        
+    
+    
+            var marker_5636556f99a7e7a20419471ca37dc090 = L.marker(
+                [48.84708159081946, 2.321374788880348],
+                {}
+            ).addTo(map_dcfdebe0e441d6d871777c913612303a);
+        
+    
+            var icon_4050415674146ae00095ce95c8883093 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5636556f99a7e7a20419471ca37dc090.setIcon(icon_4050415674146ae00095ce95c8883093);
+        
+    
+        var popup_30c51b178d42f7b9ef3f02e0dc3a9657 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be64e89ad41b78a6c0247536d4bb7b9f = $(`<div id="html_be64e89ad41b78a6c0247536d4bb7b9f" style="width: 100.0%; height: 100.0%;">         <b>Station:</b> Saint-Romain - Cherche-Midi<br>         <b>Arrondissement:</b> Paris<br>         <b>Capacité totale:</b> 17<br>         <b>Vélos disponibles:</b> 15 (Mécaniques: 4, Électriques: 11)<br>         <b>Places libres:</b> 0<br>         <b>En location:</b> OUI<br>         <b>Distance:</b> 2.27 km         </div>`)[0];
+                popup_30c51b178d42f7b9ef3f02e0dc3a9657.setContent(html_be64e89ad41b78a6c0247536d4bb7b9f);
+            
+        
+
+        marker_5636556f99a7e7a20419471ca37dc090.bindPopup(popup_30c51b178d42f7b9ef3f02e0dc3a9657)
+        ;
+
+        
+    
+</script>
+</html>
